@@ -43,7 +43,7 @@ impl AppPaths {
 
     /// Path to CodexBar-compatible token accounts file (macOS only).
     #[must_use]
-    pub const fn codexbar_token_accounts_file() -> Option<PathBuf> {
+    pub fn codexbar_token_accounts_file() -> Option<PathBuf> {
         #[cfg(target_os = "macos")]
         {
             dirs::home_dir()

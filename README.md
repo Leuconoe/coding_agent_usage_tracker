@@ -172,7 +172,7 @@ cargo install --git https://github.com/Dicklesworthstone/coding_agent_usage_trac
 
 | Requirement | Version | Notes |
 |-------------|---------|-------|
-| **Rust** | 1.88+ | Nightly required for edition 2024 |
+| **Rust** | 1.88+ | Stable toolchain supported |
 | **OpenSSL** | Any | Linux only, for TLS |
 
 ### Verify Installation
