@@ -118,8 +118,8 @@ fn linear_regression_slope(points: &[&StoredSnapshot]) -> Option<f64> {
 
         sum_x += x;
         sum_y += y;
-        sum_xy += x * y;
-        sum_xx += x * x;
+        sum_xy = x.mul_add(y, sum_xy);
+        sum_xx = x.mul_add(x, sum_xx);
     }
 
     let denominator = n.mul_add(sum_xx, -(sum_x * sum_x));

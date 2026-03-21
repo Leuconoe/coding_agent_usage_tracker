@@ -43,6 +43,7 @@ impl AppPaths {
 
     /// Path to CodexBar-compatible token accounts file (macOS only).
     #[must_use]
+    #[allow(clippy::missing_const_for_fn)] // const on non-macOS but not on macOS; keep consistent
     pub fn codexbar_token_accounts_file() -> Option<PathBuf> {
         #[cfg(target_os = "macos")]
         {
