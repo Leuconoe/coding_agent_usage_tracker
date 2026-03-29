@@ -318,8 +318,7 @@ Notes:
 ### Resident Daemon Validation Assets
 
 - Smoke test script: `scripts/resident_daemon_smoke_test.sh`
-- PDCA notes: `.agents/PDCA-CYCLE-1.md`, `.agents/PDCA-CYCLE-2.md`
-- Change report: `.agents/RESIDENT-DAEMON-CHANGE-REPORT.md`
+- Release artifact validation example: `CAUT_BIN=./target/release/caut.exe ./scripts/resident_daemon_smoke_test.sh`
 
 ### `caut cost`
 

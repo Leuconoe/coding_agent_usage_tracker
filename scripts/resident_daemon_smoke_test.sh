@@ -62,10 +62,10 @@ find_caut_bin() {
     fi
 
     local candidates=(
-        "./target/debug/caut.exe"
-        "./target/debug/caut"
         "./target/release/caut.exe"
         "./target/release/caut"
+        "./target/debug/caut.exe"
+        "./target/debug/caut"
         "/tmp/cargo-target/debug/caut.exe"
         "/tmp/cargo-target/debug/caut"
     )
